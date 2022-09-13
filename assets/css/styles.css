@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  background-color: #191d2b;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  color: var(--color-white);
+  transition: all 0.4s ease-in-out;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+  background-color: #262c42;
+  border-style: solid;
+  border-color: #cb25dd1f;
+  border-width: 3px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: fit-content;
+}
+
+.navbar a {
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 14px 16px;
+}
+
+.navbar a:hover {
+  background-color: #191d2b54;
+  color: #ffffff78;
+}
+
+.navbar a.active {
+  background-color: #151a28;
+  color: white;
+  border-style: solid;
+  border-width: 2;
+  border-color: black;
+}
+
+.navbarRightLink {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  display: none;
+  cursor: pointer;
+}
+
+.navbarRightLink a {
+  flex-shrink: 0;
+}
+
+.navbarLeftTitle {
+  color: white !important;
+}
+
+.fa-solid {
+  padding: 14px 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.toggled {
+  overflow: hidden;
+  flex-basis: 100%;
+  flex-grow: 1;
+  text-align: right;
+  display: flex !important;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* HEADER */
+#head {
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+  margin: auto;
+  padding: 80px;
+  font-size: 40px;
+  text-align: center;
+}
+
+#bar {
+  text-align: center;
+  width: 100%;
+  height: 25px;
+  background-color: #DAD9D9;
+  margin: 0 auto;
+  font-family: monospace;
+  padding: auto;
+  float: none;
+  border-radius: 5px;
+}
+
+#red {
+  background-color: #E94B35;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  margin: 0 auto;
+  left: -47%;
+  bottom: -20%;
+  position: relative;
+}
+
+#yellow {
+  background-color: #f0f000;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  margin: 0 auto;
+  left: -44%;
+  bottom: 40%;
+  position: relative;
+  display: block;
+}
+
+#green {
+  background-color: #1AAF5C;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  margin: 0 auto;
+  left: -41%;
+  bottom: 99%;
+  position: relative;
+  display: block;
+}
+
+#screen {
+  background-color: #33485E;
+  inline-size: fit-content;
+  width: 10%;
+  max-width: fit-content;
+  height: 450px;
+  border-radius: 2%;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  padding: 1px;
+  display: table;
+}
+
+.font {
+  color: #fff;
+  font-family: monospace;
+  font-size: 18px;
+  text-align: left;
+  position: static;
+}
+
+/* BUTTON DOWNLOAD CURRICULUM VITAE */
+
+.buttonCV {
+  color: white;
+  background-color: #33485E;
+  inline-size: fit-content;
+  width: 80%;
+  max-width: fit-content;
+  border-style: solid;
+  border-color: white;
+  border-width: 3;
+  border-radius: 10%;
+  margin-bottom: 28px;
+  margin-top: 2rem;
+  padding: 1px;
+  display: table-footer-group;
+  text-align-last: center;
+  cursor: pointer
+}
+
+.textCV {
+  margin: 10;
+}
+
+#buttonImgCV {
+  border-radius: 1rem;
+  border-style: solid;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-image: stretch;
+  width: 60%;
+  display: none;
+}
+
+#infoCV {
+  display: none;
+}
+
+/* LABEL PARAMETER */
+
+.unselectableLabel {
+  user-select: none;
+  background-color: unset !important;
+}
+
+/* Custom Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: hsl(230, 6%, 61%);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(240, 6%, 93%);
+}
