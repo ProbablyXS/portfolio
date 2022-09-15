@@ -11,23 +11,23 @@ hamburger.addEventListener("click", event => {
 })
 
 // navbarRightLink ACTIVE CLASS CHANGE
-navbarRightLink.addEventListener("click", event => {
+//navbarRightLink.addEventListener("click", event => {
 
-    if (event.target.id == "navbarRightLink") { //FIX DRAG AND DROP
-        return;
-    }
+   // if (event.target.id == "navbarRightLink") { //FIX DRAG AND DROP
+     //   return;
+    //}
 
-    var ids = [];
-    var children = document.getElementById("navbarRightLink").children; //get container element children.
-    for (var i = 0, len = children.length; i < len; i++) {
-        ids.push(children[i].id); //get child id.
+   // var ids = [];
+   // var children = document.getElementById("navbarRightLink").children; //get container element children.
+   // for (var i = 0, len = children.length; i < len; i++) {
+       // ids.push(children[i].id); //get child id.
 
-        if (document.getElementById(children[i].id).classList.contains("active")) {
-            document.getElementById(children[i].id).classList.remove("active");
-        }
-    }
-    document.getElementById(event.target.id).classList.add("active");
-})
+     //   if (document.getElementById(children[i].id).classList.contains("active")) {
+       //     document.getElementById(children[i].id).classList.remove("active");
+     //   }
+  //  }
+ //   document.getElementById(event.target.id).classList.add("active");
+//})
 
 
 

@@ -7,7 +7,7 @@
 
   #screen {
     width: 50%;
-    max-width: 50%;
+    max-width: 70%;
   }
 
 }
@@ -32,6 +32,12 @@
 
   .fa-bars {
     display: none;
+  }
+
+  /* HEADER */
+
+  #screen {
+    width: 50%;
   }
 
 }

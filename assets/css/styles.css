@@ -12,22 +12,26 @@ body {
   font-size: 1.1rem;
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
+  display: inline-table;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 /* NAVIGATION BAR */
 
 .navbar {
   background-color: #262c42;
   border-style: solid;
-  border-color: #cb25dd1f;
+  border-color: #ffffff1f;
   border-width: 3px;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 .navbar a {
@@ -94,6 +98,11 @@ body {
   padding: 80px;
   font-size: 40px;
   text-align: center;
+  border-bottom: 12px solid rgb(58 43 85 / 27%);
+  display: flex;
+  min-height: 440px;
+  align-items: center;
+  justify-content: center;
 }
 
 #bar {
@@ -146,14 +155,15 @@ body {
 #screen {
   background-color: #33485E;
   inline-size: fit-content;
-  width: 10%;
   max-width: fit-content;
-  height: 450px;
   border-radius: 2%;
-  margin: 0 auto;
-  margin-bottom: 28px;
   padding: 1px;
-  display: table;
+  display: flex;
+  flex-direction: column;
+  margin:0 auto;
+  text-align: center;
+  margin-bottom: 500px;
+  margin-top: 150px;
 }
 
 .font {
@@ -164,6 +174,20 @@ body {
   position: static;
 }
 
+/* PRESENTATION */
+
+.presentation {
+  margin-top: 150px;
+}
+
+.textTitle {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+
 /* BUTTON DOWNLOAD CURRICULUM VITAE */
 
 .buttonCV {
@@ -172,20 +196,17 @@ body {
   inline-size: fit-content;
   width: 80%;
   max-width: fit-content;
-  border-style: solid;
-  border-color: white;
-  border-width: 3;
   border-radius: 10%;
-  margin-bottom: 28px;
-  margin-top: 2rem;
-  padding: 1px;
+  margin-top: 16rem;
   display: table-footer-group;
   text-align-last: center;
-  cursor: pointer
+  cursor: pointer;
+  align-self: center;
 }
 
 .textCV {
   margin: 10;
+  margin-top: -31px;
 }
 
 #buttonImgCV {
