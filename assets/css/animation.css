@@ -42,20 +42,16 @@ p {
 .inner-header {
   width: 100%;
   margin: 0;
-  padding: 30px;
+  padding: 61px;
   text-align: -webkit-center;
 }
 
 .waves {
-    /* position: relative; */
-    width: 100%;
-    height: 6vh;
-    /* padding-top: 27px; */
-    min-height: 74px;
-    margin-top: -60px;
-    /* padding-bottom: 21px; */
-    /* margin-bottom: -151px; */
-    max-height: 214px;
+  width: 100%;
+  height: 6vh;
+  min-height: 74px;
+  margin-top: -54px;
+  max-height: 214px;
 }
 
 .content {

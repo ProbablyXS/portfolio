@@ -20,6 +20,11 @@
     padding: 135px !important;
   }
 
+  .waves {
+    height: 12vh !important;
+    margin-top: -103px !important;
+  }
+
 }
 
 /* Tablets */
@@ -51,7 +56,7 @@
   }
 
   .menu {
-width: 85%;
+    width: 85%;
   }
 
 }
