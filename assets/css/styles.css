@@ -201,12 +201,19 @@ html {
 /* PRESENTATION */
 
 .presentation {
-  margin-top: 150px;
+  /* margin-top: 150px; */
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   align-items: center;
+}
+
+.presentation-animate-bgImage {
+  background-image: url(../../assets/img/presentation.jpg);
+  background-position:left;
+  background-size:cover;
+  animation: animatedBackground 10s linear infinite alternate;
 }
 
 #screen {

@@ -44,15 +44,23 @@ p {
   width: 100%;
   margin: 0;
   padding: 61px;
-  text-align: -webkit-center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
 }
 
 .waves {
   width: 100%;
-  height: 6vh;
-  min-height: 74px;
-  margin-top: -54px;
-  max-height: 214px;
+  min-height: 71px;
+  max-height: 55px;
+}
+
+.waves2 {
+  width: 100%;
+  min-height: 71px;
+  max-height: 55px;
 }
 
 .content {
@@ -90,11 +98,11 @@ p {
 
 @keyframes move-forever {
   0% {
-    transform: translate3d(-90px, 0, 0);
+    transform: translate3d(-128px, 0, 0);
   }
 
   100% {
-    transform: translate3d(85px, 0, 0);
+    transform: translate3d(50px, 0, 0);
   }
 }
 
