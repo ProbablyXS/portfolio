@@ -112,6 +112,23 @@ html {
 .bgImage {
   background-image: url(../../assets/img/bg.jpg);
   background-position: center;
+  background-size: cover;
+}
+
+.animate-bgImage {
+  background-image: url(../../assets/img/bg.jpg);
+  background-position:left;
+  background-size:cover;
+  animation: animatedBackground 10s linear infinite alternate;
+}
+
+@keyframes animatedBackground {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
 }
 
 #head {
@@ -169,8 +186,8 @@ html {
 
 .headerTextBar {
   border-bottom-style: solid;
-  width: 245px;
-  height: 24px;
+  width: 297px;
+  padding-top: 18px;
   border-color: white;
 }
 
