@@ -14,10 +14,9 @@ h1 {
 }
 
 p {
-  font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
   font-size: 14px;
-  color: #333333;
+  display: table;
 }
 
 .header {
@@ -29,6 +28,8 @@ p {
 .headerText {
   font-size: 150%;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 .logo {
@@ -99,11 +100,6 @@ p {
 
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
-  .waves {
-    height: 40px;
-    min-height: 40px;
-    height: 62px;
-  }
 
   .content {
     height: 30vh;

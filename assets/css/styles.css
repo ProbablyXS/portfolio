@@ -91,16 +91,22 @@ html {
 /* HEADER */
 
 .menu {
-  background-color: #0000004a;
+  background-color: rgba(0, 0, 0, 0.29);
+  text-shadow: -5px -2px 20px #ffffff85;
   display: flex;
   height: 100%;
-  align-items: center;
-  justify-items: center;
+  place-items: center;
   flex-direction: column;
+  place-content: center;
+  padding-bottom: 34px;
+  padding-top: 18px;
+  margin-bottom: 40px;
+  margin-top: 25px;
+  text-align: center;
+  flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  padding-bottom: 163px;
-  padding-top: 100px;
+  align-items: center;
 }
 
 .bgImage {
@@ -147,8 +153,10 @@ html {
   flex-direction: column;
   margin:0 auto;
   text-align: center;
-  margin-bottom: 500px;
+  margin-bottom: 200px;
   margin-top: 150px;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff1c;
 }
 
 .font {
@@ -163,6 +171,7 @@ html {
   border-bottom-style: solid;
   width: 245px;
   height: 24px;
+  border-color: white;
 }
 
 .headerTextBarBottom {
@@ -176,6 +185,16 @@ html {
 
 .presentation {
   margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#screen {
+  border-color: #ffffff57;
+  border-style: solid;
 }
 
 .textTitle {
@@ -183,6 +202,18 @@ html {
   display: flex;
   justify-content: center;
   font-size: 30px;
+}
+
+/* PROJETS */
+
+.projets {
+  background-color: #131812;
+  margin-top: -12px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 

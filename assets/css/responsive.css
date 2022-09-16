@@ -11,7 +11,9 @@
   }
 
   .menu {
-    width: 75% !important;
+    width: 65% !important;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   .inner-header {
@@ -21,8 +23,8 @@
   }
 
   .waves {
-    height: 12vh !important;
-    margin-top: -103px !important;
+    height: 18vh !important;
+    margin-top: -120px !important;
   }
 
 }
