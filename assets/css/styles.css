@@ -268,7 +268,7 @@ html {
   text-align-last: center;
   cursor: pointer;
   align-self: center;
-  transition: all 1s ease 0s;
+  transition: all 1s cubic-bezier(0, 1.37, 0.22, 1.04) 0s;
 }
 
 .textCV {
@@ -283,7 +283,7 @@ html {
   margin-top: 50px;
   margin-bottom: 50px;
   border-image: stretch;
-  width: 60%;
+  width: 75%;
   display: none;
   transition: all 0.5s ease 0s;
 }

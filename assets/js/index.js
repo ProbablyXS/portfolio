@@ -14,6 +14,7 @@ function myFunction() {
     if (winScroll > 399 && winScroll < 1536) {
 
         document.getElementById("screen").classList.add("show");
+        document.getElementById("screen").classList.remove("hide");
 
         document.getElementById("menu1").classList.remove("active");
         document.getElementById("menu3").classList.remove("active");
@@ -25,6 +26,7 @@ function myFunction() {
     else if (winScroll > 1535 && winScroll < 1592) {
 
         document.getElementById("screen").classList.remove("show");
+        document.getElementById("screen").classList.add("hide");
 
         document.getElementById("menu1").classList.remove("active");
         document.getElementById("menu2").classList.remove("active");
@@ -36,6 +38,7 @@ function myFunction() {
     else if (winScroll > 2500) {
 
         document.getElementById("screen").classList.remove("show");
+        document.getElementById("screen").classList.add("hide");
 
         document.getElementById("menu1").classList.remove("active");
         document.getElementById("menu2").classList.remove("active");
@@ -46,6 +49,7 @@ function myFunction() {
     else if (winScroll < 510) {
 
         document.getElementById("screen").classList.remove("show");
+        document.getElementById("screen").classList.add("hide");
 
         document.getElementById("navbar").style.position = 'unset';
         document.getElementById("navbar").style.left = 0;
@@ -73,27 +77,27 @@ buttonImgCV.addEventListener("click", async event => {
 
     await sleep(20);
 
-    if (document.getElementById("buttonCV").style.transform == 'scale(1)') {
-        document.getElementById("buttonCV").style.transform = 'scale(2)';
-        document.getElementById("buttonCV").style.borderStyle = 'solid';
+    if (document.getElementById("buttonImgCV").style.width == '75%') {
         document.getElementById("CV").style.display = "none";
 
         if (window.matchMedia("(min-width: 1024px)").matches) {
+            document.getElementById("buttonImgCV").style.width = '90%'
             document.getElementById("buttonCV").style.marginBottom = "300px";
             document.getElementById("buttonCV").style.marginTop = "100px";
         }
         else if (window.matchMedia("(min-width: 768px)").matches) {
+            document.getElementById("buttonImgCV").style.width = '90%'
             document.getElementById("buttonCV").style.marginBottom = "112px";
             document.getElementById("buttonCV").style.marginTop = "-184px";
         }
         else {
+            document.getElementById("buttonImgCV").style.width = '100%'
             document.getElementById("buttonCV").style.marginBottom = "154px";
             document.getElementById("buttonCV").style.marginTop = "-200px";
         }
 
     } else {
-        document.getElementById("buttonCV").style.transform = 'scale(1)';
-        document.getElementById("buttonCV").style.borderStyle = 'unset';
+        document.getElementById("buttonImgCV").style.width = '75%'
         document.getElementById("CV").style.display = "block";
         document.getElementById("buttonCV").style.marginBottom = "unset";
         document.getElementById("buttonCV").style.marginTop = "unset";
