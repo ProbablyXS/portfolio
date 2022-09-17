@@ -176,6 +176,16 @@ html {
   border-bottom-color: #ffffff1c;
 }
 
+.hide {
+  opacity: 50%;
+  transition: all 1s ease 0s;
+}
+
+.show {
+  opacity: 100%;
+  transition: all 1s ease 0s;
+}
+
 .font {
   color: #fff;
   font-family: monospace;
@@ -250,7 +260,6 @@ html {
 
 .buttonCV {
   color: white;
-  background-color: #33485E;
   inline-size: fit-content;
   width: 80%;
   max-width: fit-content;

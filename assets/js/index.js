@@ -12,6 +12,9 @@ function myFunction() {
 
     //PRESENTATION
     if (winScroll > 399 && winScroll < 1536) {
+
+        document.getElementById("screen").classList.add("show");
+
         document.getElementById("menu1").classList.remove("active");
         document.getElementById("menu3").classList.remove("active");
         document.getElementById("menu4").classList.remove("active");
@@ -20,6 +23,9 @@ function myFunction() {
     }
     //PROJETS
     else if (winScroll > 1535 && winScroll < 1592) {
+
+        document.getElementById("screen").classList.remove("show");
+
         document.getElementById("menu1").classList.remove("active");
         document.getElementById("menu2").classList.remove("active");
         document.getElementById("menu4").classList.remove("active");
@@ -28,6 +34,9 @@ function myFunction() {
     }
     //A PROPOS
     else if (winScroll > 2500) {
+
+        document.getElementById("screen").classList.remove("show");
+
         document.getElementById("menu1").classList.remove("active");
         document.getElementById("menu2").classList.remove("active");
         document.getElementById("menu3").classList.remove("active");
@@ -35,6 +44,9 @@ function myFunction() {
         document.getElementById("menu4").classList.add("active");
     }
     else if (winScroll < 510) {
+
+        document.getElementById("screen").classList.remove("show");
+
         document.getElementById("navbar").style.position = 'unset';
         document.getElementById("navbar").style.left = 0;
         document.getElementById("navbar").style.right = 0;
@@ -64,7 +76,6 @@ buttonImgCV.addEventListener("click", async event => {
     if (document.getElementById("buttonCV").style.transform == 'scale(1)') {
         document.getElementById("buttonCV").style.transform = 'scale(2)';
         document.getElementById("buttonCV").style.borderStyle = 'solid';
-        document.getElementById("buttonCV").style.borderRadius = '0%';
         document.getElementById("CV").style.display = "none";
 
         if (window.matchMedia("(min-width: 1024px)").matches) {
@@ -83,7 +94,6 @@ buttonImgCV.addEventListener("click", async event => {
     } else {
         document.getElementById("buttonCV").style.transform = 'scale(1)';
         document.getElementById("buttonCV").style.borderStyle = 'unset';
-        document.getElementById("buttonCV").style.borderRadius = '10%';
         document.getElementById("CV").style.display = "block";
         document.getElementById("buttonCV").style.marginBottom = "unset";
         document.getElementById("buttonCV").style.marginTop = "unset";
