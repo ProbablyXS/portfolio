@@ -33,6 +33,42 @@ function sleep(ms) {
 }
 
 const CV = document.getElementById("CV");
+const buttonImgCV = document.getElementById("buttonImgCV");
+
+// Toggle dropdown list display on hamburger click
+buttonImgCV.addEventListener("click", async event => {
+
+    await sleep(20);
+
+    if (document.getElementById("buttonCV").style.transform == 'scale(1)') {
+        document.getElementById("buttonCV").style.transform = 'scale(2)';
+        document.getElementById("buttonCV").style.borderStyle = 'solid';
+        document.getElementById("buttonCV").style.borderRadius = '0%';
+        document.getElementById("CV").style.display = "none";
+
+        if (window.matchMedia("(min-width: 1024px)").matches) {
+            document.getElementById("buttonCV").style.marginBottom = "300px";
+            document.getElementById("buttonCV").style.marginTop = "100px";
+          } 
+          else if (window.matchMedia("(min-width: 768px)").matches) {
+            document.getElementById("buttonCV").style.marginBottom = "112px";
+            document.getElementById("buttonCV").style.marginTop = "-184px";
+          }
+          else {
+            document.getElementById("buttonCV").style.marginBottom = "154px";
+            document.getElementById("buttonCV").style.marginTop = "-200px";
+          }
+
+    } else {
+        document.getElementById("buttonCV").style.transform = 'scale(1)';
+        document.getElementById("buttonCV").style.borderStyle = 'unset';
+        document.getElementById("buttonCV").style.borderRadius = '10%';
+        document.getElementById("CV").style.display = "block";
+        document.getElementById("buttonCV").style.marginBottom = "unset";
+        document.getElementById("buttonCV").style.marginTop = "unset";
+    }
+
+})
 
 // Toggle dropdown list display on hamburger click
 CV.addEventListener("click", async event => {

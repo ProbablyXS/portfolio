@@ -211,7 +211,6 @@ html {
 
 .presentation-animate-bgImage {
   background-image: url(../../assets/img/presentation.jpg);
-  background-position:left;
   background-size:cover;
   animation: animatedBackground 10s linear infinite alternate;
 }
@@ -251,10 +250,10 @@ html {
   max-width: fit-content;
   border-radius: 10%;
   margin-top: 16rem;
-  display: table-footer-group;
   text-align-last: center;
   cursor: pointer;
   align-self: center;
+  transition: all 1s ease 0s;
 }
 
 .textCV {
@@ -271,6 +270,7 @@ html {
   border-image: stretch;
   width: 60%;
   display: none;
+  transition: all 0.5s ease 0s;
 }
 
 #infoCV {
