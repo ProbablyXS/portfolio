@@ -11,11 +11,9 @@ hamburger.addEventListener("click", event => {
 })
 
 // navbarRightLink ACTIVE CLASS CHANGE
-//navbarRightLink.addEventListener("click", event => {
+navbarRightLink.addEventListener("click", event => {
 
-   // if (event.target.id == "navbarRightLink") { //FIX DRAG AND DROP
-     //   return;
-    //}
+  navLinks.classList.remove("toggled"); //Hide navbar
 
    // var ids = [];
    // var children = document.getElementById("navbarRightLink").children; //get container element children.
@@ -27,7 +25,7 @@ hamburger.addEventListener("click", event => {
      //   }
   //  }
  //   document.getElementById(event.target.id).classList.add("active");
-//})
+})
 
 
 

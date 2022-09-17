@@ -75,23 +75,35 @@
                 <div class="textCV unselectableLabel"><span id="CV"> Ouvrir le CV </span></div>
             </div>
         </div>
-    </div>
-
-
-    <!-- PROJETS -->
-    <div id="projets"></div>
-    <div class="projets">
-
+        
         <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
-                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                <path id="gentle-wavetop" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 41 h -352 z" />
+                <path id="gentle-wavebot" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v -69 h -352 z" />
+            
             </defs>
             <g class="parallax">
-                <use xlink:href="#gentle-wave" x="90" y="1" fill="rgb(17 20 30 / 56%)" />
-                <use xlink:href="#gentle-wave" x="90" y="1" fill="#131812" />
+                <use xlink:href="#gentle-wavetop" x="90" y="1" fill="rgb(17 20 30 / 56%)" />
+                <use xlink:href="#gentle-wavetop" x="90" y="1" fill="#131812" />
             </g>
         </svg>
 
+    </div>
+
+    <!-- PROJETS -->
+    <div id="projets"></div>
+    <div class="projets projets-animate-bgImage">
+        <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wavetop" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 41 h -352 z" />
+                <path id="gentle-wavebot" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v -69 h -352 z" />
+            
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wavebot" x="90" y="1" fill="rgb(17 20 30 / 56%)" />
+                <use xlink:href="#gentle-wavebot" x="90" y="1" fill="#131812" />
+            </g>
+        </svg>
         <div class="textTitle unselectableLabel"> MES PROJETS PERSONNELS </div>
         <div class="headerTextBar unselectableLabel"></div>
         <div id="screen">

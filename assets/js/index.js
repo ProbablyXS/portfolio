@@ -6,22 +6,43 @@ window.onscroll = function () { myFunction() };
 function myFunction() {
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
-    if (winScroll > 700) {
-        document.getElementById("navbar").style.position = 'fixed';
-        document.getElementById("navbar").style.left = 0;
-        document.getElementById("navbar").style.right = 0;
+    document.getElementById("navbar").style.position = 'fixed';
+    document.getElementById("navbar").style.left = 0;
+    document.getElementById("navbar").style.right = 0;
 
+    //PRESENTATION
+    if (winScroll > 399 && winScroll < 1536) {
         document.getElementById("menu1").classList.remove("active");
-        document.getElementById("menu2").classList.add("active");
+        document.getElementById("menu3").classList.remove("active");
+        document.getElementById("menu4").classList.remove("active");
 
-        navLinks.classList.remove("toggled"); //Hide navbar
+        document.getElementById("menu2").classList.add("active");
     }
-    else {
+    //PROJETS
+    else if (winScroll > 1535 && winScroll < 1592) {
+        document.getElementById("menu1").classList.remove("active");
+        document.getElementById("menu2").classList.remove("active");
+        document.getElementById("menu4").classList.remove("active");
+
+        document.getElementById("menu3").classList.add("active");
+    }
+    //A PROPOS
+    else if (winScroll > 2500) {
+        document.getElementById("menu1").classList.remove("active");
+        document.getElementById("menu2").classList.remove("active");
+        document.getElementById("menu3").classList.remove("active");
+
+        document.getElementById("menu4").classList.add("active");
+    }
+    else if (winScroll < 510) {
         document.getElementById("navbar").style.position = 'unset';
         document.getElementById("navbar").style.left = 0;
         document.getElementById("navbar").style.right = 0;
 
         document.getElementById("menu2").classList.remove("active");
+        document.getElementById("menu3").classList.remove("active");
+        document.getElementById("menu4").classList.remove("active");
+
         document.getElementById("menu1").classList.add("active");
     }
 }
@@ -35,7 +56,7 @@ function sleep(ms) {
 const CV = document.getElementById("CV");
 const buttonImgCV = document.getElementById("buttonImgCV");
 
-// Toggle dropdown list display on hamburger click
+// buttonImgCV click
 buttonImgCV.addEventListener("click", async event => {
 
     await sleep(20);
@@ -49,15 +70,15 @@ buttonImgCV.addEventListener("click", async event => {
         if (window.matchMedia("(min-width: 1024px)").matches) {
             document.getElementById("buttonCV").style.marginBottom = "300px";
             document.getElementById("buttonCV").style.marginTop = "100px";
-          } 
-          else if (window.matchMedia("(min-width: 768px)").matches) {
+        }
+        else if (window.matchMedia("(min-width: 768px)").matches) {
             document.getElementById("buttonCV").style.marginBottom = "112px";
             document.getElementById("buttonCV").style.marginTop = "-184px";
-          }
-          else {
+        }
+        else {
             document.getElementById("buttonCV").style.marginBottom = "154px";
             document.getElementById("buttonCV").style.marginTop = "-200px";
-          }
+        }
 
     } else {
         document.getElementById("buttonCV").style.transform = 'scale(1)';
@@ -85,7 +106,7 @@ CV.addEventListener("click", async event => {
     else {
         document.getElementById('buttonImgCV').src = pic.replace('90x90', '225x225');
         document.getElementById('buttonImgCV').style.display = 'block';
-        
+
         document.getElementById("buttonCV").style.marginTop = '0';
     }
 

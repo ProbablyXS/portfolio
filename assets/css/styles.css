@@ -239,6 +239,12 @@ html {
   align-items: center;
 }
 
+.projets-animate-bgImage {
+  background-image: url(../../assets/img/projets.jpg);
+  background-size:cover;
+  animation: animatedBackground 10s linear infinite alternate;
+}
+
 
 /* BUTTON DOWNLOAD CURRICULUM VITAE */
 
