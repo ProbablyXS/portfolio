@@ -53,6 +53,7 @@ p {
 
 .waves {
   width: 100%;
+  margin-top: -1px !important;
   min-height: 71px;
   max-height: 55px;
 }

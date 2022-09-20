@@ -255,6 +255,7 @@ html {
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
+  margin-bottom: 100px;
   transition: all 0.4s ease-in-out;
   animation: animatedBackground 10s linear infinite alternate;
 }
@@ -264,16 +265,14 @@ html {
   text-align: center;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
   transition: all 1s ease-in-out;
-  width: 486px;
+  width: 423px;
   border-style: solid;
   background-color: #192843;
-
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-
-  border-color: #233453;
+  border-color: #ffffff2b;
 }
 
 .blogtext {
@@ -297,6 +296,7 @@ html {
 .blogtext span {
   margin-top: 13px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .blogtext p {
@@ -363,8 +363,77 @@ html {
   align-items: center;
 }
 
+.aboutme {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.aboutinfo {
+  display: flex;
+  flex-wrap: wrap;
+  white-space: break-spaces;
+  font-family: monospace;
+  flex-direction: row;
+  align-items: baseline;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.aboutButton {
+  display: flex;
+  flex-direction: row;
+  margin: 42px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.myINFORMATION {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+}
+
+.fa-brands, .fab{
+  font-size: 100;
+}
+
+.aboutButton a {
+  border-color: #111722;
+  background-color: black;
+  margin: 0 0.4rem;
+  border-style: solid;
+  border-width: 13px;
+  border-radius: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.aboutTextInfo {
+  font-size: 22px;
+}
+
+.aboutButton i {
+  font-size: 26px;
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
+
+.aboutButton i:hover {
+  font-size: 25;
+  color: yellow;
+  border-style:dashed;
+  border-width: 5px;
+  border-radius: inherit;
+  border-color: #111722;
+  background-color: black;
+}
+
 .about-animate-bgImage {
-  background-image: linear-gradient(#78000063, black), url(../../assets/img/about.jpg);
+  background-image: linear-gradient(#272b32d9, black), url(../../assets/img/about.jpg);
   background-size: cover;
   animation: animatedBackground 10s linear infinite alternate;
 }
@@ -372,11 +441,12 @@ html {
 .aboutContainer {
   margin-top: 100px !important;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
   align-items: center;
+  margin-bottom: 47px;
 }
 
 /* FOOTER */
@@ -439,8 +509,9 @@ html {
 /* LABEL PARAMETER */
 
 .unselectableLabel {
-  user-select: none;
+  user-select: none !important;
   background-color: unset !important;
+  cursor: unset;
 }
 
 /* Custom Scrollbar */
