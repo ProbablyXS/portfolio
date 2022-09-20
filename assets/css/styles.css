@@ -256,6 +256,7 @@ html {
   grid-gap: 2rem;
   margin-top: 3rem;
   margin-bottom: 100px;
+  margin-top: 100px !important;
   transition: all 0.4s ease-in-out;
   animation: animatedBackground 10s linear infinite alternate;
 }
@@ -327,7 +328,7 @@ html {
 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-
+  cursor: pointer;
   display: block;
   width: 100%;
   position: relative;
@@ -393,6 +394,7 @@ html {
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-top: 158px;
   flex-wrap: wrap;
   align-content: space-between;
   justify-content: center;
@@ -403,11 +405,28 @@ html {
 }
 
 .fa-instagram:hover {
-  background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
+  background-image: linear-gradient(to left, #405DE6, #5851DB, #833AB4, #C13584, red, orange, red);
+  border-radius: 100;
+  background-size: 19px;
+  -webkit-background-clip: padding-box;
   background-clip: text;
-  color: transparent;
+}
+
+.fa-twitter:hover {
+  background-image: linear-gradient(to right, #fdfdfd1b, #b1c3cf19) !important;
+  border-radius: 100;
+  color: #1D9BF0;
+  background-size: 19px;
+  -webkit-background-clip: padding-box;
+  background-clip: text;
+}
+
+.fa-twitter {
+  background-image: unset !important;
+}
+
+.fa-github:hover {
+  color:	rgba(255, 255, 255, 0.221) !important;
 }
 
 .fa-youtube:hover {
@@ -426,7 +445,7 @@ html {
 }
 
 .aboutTextInfo {
-  font-size: 22px;
+  font-size: 17px;
 }
 
 .aboutButton i {

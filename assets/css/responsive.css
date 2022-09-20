@@ -48,6 +48,13 @@
     justify-content: center !important;
   }
 
+  
+    /* A PROPOS */
+
+    .aboutTextInfo {
+      font-size: 22px;
+    }
+
 }
 
 /* Tablets */
@@ -103,5 +110,11 @@
     font-weight: bold;
     font-size: 18px;
   }
+
+    /* A PROPOS */
+
+    .aboutTextInfo {
+      font-size: 22px;
+    }
 
 }
