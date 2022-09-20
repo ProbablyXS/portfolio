@@ -456,7 +456,6 @@ html {
 
 .aboutButton i:hover {
   font-size: 25;
-  border-style:dashed;
   border-width: 2px;
   border-radius: inherit;
   border-color: #111722;
