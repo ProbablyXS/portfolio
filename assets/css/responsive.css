@@ -27,6 +27,27 @@
     margin-top: 2px !important;
   }
 
+  .blog {
+    width: 280px !important;
+  }
+
+  .containerBlogs {
+    margin-top: 5rem !important;
+    text-align: center !important;
+    align-content: center !important;
+    align-items: center !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    width: 95%;
+    align-content: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 38px !important;
+    transition: all 0.4s ease-in-out !important;
+    justify-content: center !important;
+  }
+
 }
 
 /* Tablets */
@@ -59,6 +80,28 @@
 
   .menu {
     width: 85%;
+  }
+
+  /* PROJETS */
+
+  .containerBlogs {
+    display: grid;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    margin: 29px;
+    transition: all 0.4s ease-in-out;
+    justify-content: center;
+  }
+
+  .blog {
+    width: 500px;
+  }
+
+  .blogtext span {
+    margin-top: 13px;
+    font-weight: bold;
+    font-size: 18px;
   }
 
 }

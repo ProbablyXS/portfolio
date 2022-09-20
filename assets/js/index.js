@@ -1,3 +1,7 @@
+//FOOTER
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
 /* SCROLLING PAGE */
 
 // When the user scrolls the page, execute myFunction 
