@@ -110,7 +110,7 @@ html {
 }
 
 .animate-bgImage {
-  background-image: linear-gradient(#000000,#0a08081f, transparent), url(../../assets/img/bg.jpg);
+  background-image: linear-gradient(#000000, #0a08081f, transparent), url(../../assets/img/bg.jpg);
   background-position: left;
   background-size: cover;
   animation: animatedBackground 10s linear infinite alternate;
@@ -215,7 +215,7 @@ html {
 }
 
 .presentation-animate-bgImage {
-  background-image: linear-gradient(#000000,#0a08081f, transparent), url(../../assets/img/presentation.jpg);
+  background-image: linear-gradient(#000000, #0a08081f, transparent), url(../../assets/img/presentation.jpg);
   background-size: cover;
   animation: animatedBackground 10s linear infinite alternate;
 }
@@ -265,16 +265,26 @@ html {
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
   transition: all 1s ease-in-out;
   width: 486px;
+  border-style: solid;
+  background-color: #192843;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  border-color: #233453;
 }
 
 .blogtext {
-  border-top: #ffffff;
+  border-top: #233453;
   border-top-style: solid;
   border-width: 3px;
+  border-bottom: 42px solid var(--borderColor);
   text-align-last: center;
   display: flex;
   background-color: #ffffff08;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
@@ -298,12 +308,25 @@ html {
   padding-bottom: 1rem;
 }
 
+.blogtext p {
+  font-size: 17px !important; 
+  color: #ffffff5c !important;
+}
+
+.blogtextTiny {
+  font-size: 17px !important; 
+  color: #ffffff5c !important;
+}
+
 .blogimg img {
   width: 100%;
   height: 140px;
   object-fit: cover;
   filter: grayscale(100%);
   transition: all 0.4s ease-in-out;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 
   display: block;
   width: 100%;
@@ -325,7 +348,7 @@ html {
 }
 
 .projets-animate-bgImage {
-  background-image: linear-gradient(#ffffff00 ,#d7d7d74f, #ffffff33), url(../../assets/img/projets.jpg);
+  background-image: linear-gradient(#0000004a, #0a1730, #161718);
   background-size: cover;
   animation: animatedBackground 10s linear infinite alternate;
 }
