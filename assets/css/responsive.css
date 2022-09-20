@@ -42,7 +42,7 @@
     width: 95%;
     align-content: center !important;
     justify-content: center !important;
-    align-items: center !important;
+    align-items: baseline !important;
     margin: 38px !important;
     transition: all 0.4s ease-in-out !important;
     justify-content: center !important;
@@ -88,7 +88,7 @@
     display: grid;
     text-align: center;
     align-content: center;
-    align-items: center;
+    align-items: baseline;
     margin: 29px;
     transition: all 0.4s ease-in-out;
     justify-content: center;
