@@ -403,7 +403,11 @@ html {
 }
 
 .fa-instagram:hover {
-  color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)!important;
+  background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .fa-youtube:hover {
@@ -433,7 +437,6 @@ html {
 
 .aboutButton i:hover {
   font-size: 25;
-  color: yellow;
   border-style:dashed;
   border-width: 2px;
   border-radius: inherit;
