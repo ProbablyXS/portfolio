@@ -300,6 +300,11 @@ html {
   cursor: pointer;
 }
 
+.blogtext a {
+text-decoration: unset;
+}
+
+
 .blogtext p {
   text-align: center;
   margin: 1%;
@@ -310,12 +315,12 @@ html {
 }
 
 .blogtext p {
-  font-size: 17px !important; 
+  font-size: 17px !important;
   color: #ffffff5c !important;
 }
 
 .blogtextTiny {
-  font-size: 17px !important; 
+  font-size: 17px !important;
   color: #ffffff5c !important;
 }
 
@@ -400,7 +405,8 @@ html {
   justify-content: center;
 }
 
-.fa-brands, .fab{
+.fa-brands,
+.fab {
   font-size: 100;
 }
 
@@ -426,11 +432,11 @@ html {
 }
 
 .fa-github:hover {
-  color:	rgba(255, 255, 255, 0.221) !important;
+  color: rgba(255, 255, 255, 0.221) !important;
 }
 
 .fa-youtube:hover {
-  color:#ff0000c4 !important;
+  color: #ff0000c4 !important;
 }
 
 .aboutButton a {
@@ -498,6 +504,240 @@ html {
   background-image: linear-gradient(#22262c, #262c42);
   background-size: cover;
   animation: animatedBackground 10s linear infinite alternate;
+}
+
+
+/* --------- TOUT LES PROJETS --------- */
+
+.aboutpresentation {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border-width: 10;
+  border-top-style: double;
+  border-color: #fe9900;
+  border-bottom-style: solid;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutmepresentation {
+  margin-bottom: 123px;
+  position: relative;
+}
+
+.tirerdufutur {
+  border-left-style: solid;
+  border-right-style: solid;
+  border-left-color: white;
+  border-right-color: white;
+  border-left-width: 10px;
+  text-align: center;
+  border-right-width: 10px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  height: 6px;
+}
+
+.animate-vecrproject-software-bgImage {
+  background-image: linear-gradient(#000000, #0a08081f, transparent), url(../../assets/img/p01-bg.jpg);
+  background-position: left;
+  background-size: cover;
+  animation: animatedBackground 10s cubic-bezier(0, 0.01, 1, 0.99) infinite alternate;
+}
+
+.textTitleProjets {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 23px;
+}
+
+.textTitlepresentation {
+  margin-top: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 23px;
+  font-family: 'Oswald';
+  font-weight: 700;
+  align-items: center;
+}
+
+.textTitlesoft {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 23px;
+  font-family: 'Oswald';
+  font-weight: 700;
+  align-items: center;
+}
+
+.presentationContainer {
+  margin-top: 100px !important;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.borderallprojects {
+  border-width: 10;
+  border-color: #fe9900;
+  margin-top: 210px;
+  border-bottom-style: solid;
+}
+
+.presentationText {
+  margin-top: 67px !important;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  position: relative;
+  width: 85%;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.presentationTextList {
+  margin-top: 100px !important;
+  display: grid;
+  margin-bottom: 47px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-items: stretch;
+}
+
+.blogimgprojets {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  animation: cubic-bezier(0, 0.01, 1, 0.99) infinite alternate;
+}
+
+.blogimgprojets img {
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  display: block;
+  width: 80%;
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+}
+
+.blogimgprojets:hover {
+  filter: grayscale(0%);
+  transform: scale(0.95);
+}
+
+.blogimgprojets img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.00);
+}
+
+.myINFORMATIONprojects {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 158px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.aboutButtonprojects {
+  display: flex;
+  flex-direction: row;
+  margin: 19px;
+  width: 48%;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.textTitlepresentation {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 23px;
+  font-family: 'Oswald';
+  font-weight: 700;
+}
+
+.aboutmelogicielutilise {
+  margin-bottom: 100px;
+  margin-top: 8px;
+  position: relative;
+}
+
+
+.blogimgprojetsSoftware {
+  display: flex;
+  transition: 0.3s;
+  animation: cubic-bezier(0, 0.01, 1, 0.99) infinite alternate;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blogimgprojetsSoftware img {
+  object-fit: cover;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  cursor: pointer;
+  display: block;
+  filter: brightness(50%);
+  width: 40%;
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+.blogimgprojetsSoftware:hover {
+  filter: grayscale(0%);
+  transform: scale(0.95);
+}
+
+.blogimgprojetsSoftware img:hover {
+  filter: brightness(100%);
+  transform: scale(1.00);
+  transition: all 1s ease;
+}
+
+.softContainer {
+  margin-top: 100px !important;
+  display: flex;
+  flex-direction: column;
+  margin: 58px;
+  text-align: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+}
+
+.presentationTextSoft {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 /* BUTTON DOWNLOAD CURRICULUM VITAE */
