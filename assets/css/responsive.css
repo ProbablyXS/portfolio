@@ -22,6 +22,13 @@
     padding: 135px !important;
   }
 
+  .headerTextBar {
+    border-bottom-style: solid;
+    width: 260px;
+    padding-top: 18px;
+    border-color: white;
+  }
+
   .waves {
     height: 28vh !important;
     margin-top: 2px !important;
@@ -55,7 +62,108 @@
     font-size: 22px;
   }
 
+  /* ALL PROJECTS */
+
+  .menuprojets {
+    background-color: rgba(0, 0, 0, 0.29);
+    text-shadow: -5px -2px 20px #ffffff85;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headerAllProjets {
+    height: unset;
+    position: relative;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .inner-header-All-Projets {
+    width: 100%;
+    padding: 332px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  /* ALL PROJECTS */
+
+  .aboutmelogicielutilise {
+    margin-bottom: 100px;
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
+
+.softContainer {
+  margin-top: 74px !important;
+  display: flex;
+  width: 50%;
+  margin: 55px;
+  text-align: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  align-content: center;
+}
+
+  .presentationTextSoft {
+    margin-top: unset !important;
+    display: flex !important;
+    text-align: left !important;
+    position: relative !important;
+    width: unset !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-items: center !important;
+}
+
+  .blogimgprojetsSoftware {
+    display: flex;
+    transition: 0.3s;
+    animation: cubic-bezier(0, 0.01, 1, 0.99) infinite alternate;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .blogimgprojetsSoftware img {
+    border-radius: 50%;
+    cursor: pointer;
+    filter: brightness(50%);
+    width: 74%;
+    position: relative;
+    background: #fff;
+    transition: all 1s ease;
+}
+
+.textTitlepresentation {
+  margin-top: 33px;
+  color: white;
+  letter-spacing: 6px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  font-size: 23px;
+  font-family: 'Oswald';
+  font-weight: 700;
+  align-items: center;
+}
+
+}
+
+
 
 /* Tablets */
 @media only screen and (min-width: 768px) {
@@ -119,6 +227,32 @@
 
   /* ALL PROJECTS */
 
+  .menuprojets {
+    background-color: rgba(0, 0, 0, 0.29);
+    text-shadow: -5px -2px 20px #ffffff85;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headerAllProjets {
+    height: 900px;
+    position: relative;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .inner-header-All-Projets {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
   .presentationText {
     margin-top: 56px !important;
     display: flex;
@@ -178,20 +312,20 @@
     align-content: center;
     justify-content: flex-end;
     align-items: center;
-}
+  }
 
-.presentationTextSoft {
-  margin-top: 67px !important;
-  display: flex;
-  text-align: center;
-  flex-wrap: wrap;
-  position: relative;
-  width: 85%;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  justify-items: center;
-}
+  .presentationTextSoft {
+    margin-top: 67px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 85%;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+  }
 
 }

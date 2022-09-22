@@ -301,7 +301,7 @@ html {
 }
 
 .blogtext a {
-text-decoration: unset;
+  text-decoration: unset;
 }
 
 
@@ -508,6 +508,32 @@ text-decoration: unset;
 
 
 /* --------- TOUT LES PROJETS --------- */
+
+.menuprojets {
+  padding: 48px;
+  background-color: rgba(0, 0, 0, 0.29);
+  text-shadow: -5px -2px 20px #ffffff85;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerAllProjets {
+  height: 615px;
+  position: relative;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.inner-header-All-Projets {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .aboutpresentation {
   display: flex;
@@ -729,15 +755,15 @@ text-decoration: unset;
 }
 
 .presentationTextSoft {
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
 }
 
 /* BUTTON DOWNLOAD CURRICULUM VITAE */
