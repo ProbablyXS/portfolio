@@ -365,4 +365,16 @@
     justify-items: center;
   }
 
+  .softContainerlast {
+    margin-top: 75px !important;
+    display: flex;
+    width: unset;
+    margin: 11px;
+    text-align: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
 }
