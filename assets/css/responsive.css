@@ -164,6 +164,18 @@
     justify-items: center !important;
   }
 
+  .presentationTextSoft2 {
+    margin-top: unset !important;
+    display: flex !important;
+    text-align: left !important;
+    position: relative !important;
+    width: unset !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-items: center !important;
+    width: 50% !important;
+  }
+
   .blogimgprojetsSoftware {
     display: flex;
     transition: 0.3s;
