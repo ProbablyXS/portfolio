@@ -134,3 +134,22 @@ CV.addEventListener("click", async event => {
         (document.getElementById("CV").innerHTML = "Fermer le CV")
     }
 })
+
+
+
+const buttonRedirection = document.getElementById("buttonRedirection");
+
+// buttonRedirection click
+buttonRedirection.addEventListener("click", async event => {
+
+    console.log("redictection");
+
+    await sleep(200);
+
+    document.body.style.opacity = '0%'
+
+    await sleep(2000);
+
+    document.location.href="vecr-software.html"
+
+})

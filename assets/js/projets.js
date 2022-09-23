@@ -5,7 +5,7 @@ $(document).ready(function() {
     setTimeout(function(){
 		$('section').removeClass('HIDDEN');
 		$('section').addClass('SHOWED');
-    }, 1000);
+    }, 2000);
  
 });
 

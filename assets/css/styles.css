@@ -1005,6 +1005,7 @@ button.stroke:hover,
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
+  transition: all 1s ease-in-out;
 }
 
 .bar {
@@ -1015,7 +1016,6 @@ button.stroke:hover,
   transform-origin: bottom center;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  /*   box-shadow:5px 10px 20px inset rgba(255,23,25.2); */
   animation: loader 1.2s linear infinite;
 }
 
