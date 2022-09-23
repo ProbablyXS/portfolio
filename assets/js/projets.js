@@ -1,3 +1,18 @@
+//loading page
+
+$(document).ready(function() {
+
+    setTimeout(function(){
+		$('section').removeClass('HIDDEN');
+		$('section').addClass('SHOWED');
+    }, 1000);
+ 
+});
+
+//FOOTER
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
 ;(function () {
 	
 	'use strict';

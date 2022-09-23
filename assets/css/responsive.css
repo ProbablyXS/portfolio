@@ -103,20 +103,55 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.softContainer {
-  margin-top: 74px !important;
-  display: flex;
-  width: 50%;
-  margin: 55px;
-  text-align: center;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: row;
-  align-content: center;
-}
+  .softContainer {
+    margin-top: 75px !important;
+    display: flex;
+    width: 80%;
+    margin: 11px;
+    text-align: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+  }
+
+  .softContainer2 {
+    display: flex;
+    width: 80%;
+    margin-right: 11px;
+    margin-bottom: 11px;
+    margin-left: 11px;
+    text-align: center;
+    flex-flow: row nowrap;
+    align-items: center;
+    place-content: center space-around;
+    margin-top: 157px !important;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .softContainer3 {
+    margin-top: 100px;
+    display: flex;
+    width: 80%;
+    margin-right: 11px;
+    margin-bottom: 11px;
+    margin-left: 11px;
+    text-align: center;
+    flex-flow: row nowrap;
+    align-items: center;
+    place-content: center space-around;
+    margin-top: 157px !important;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+  }
 
   .presentationTextSoft {
     margin-top: unset !important;
@@ -127,7 +162,7 @@
     flex-direction: column !important;
     align-items: flex-start !important;
     justify-items: center !important;
-}
+  }
 
   .blogimgprojetsSoftware {
     display: flex;
@@ -142,25 +177,28 @@
     border-radius: 50%;
     cursor: pointer;
     filter: brightness(50%);
-    width: 74%;
+    width: 68%;
     position: relative;
     background: #fff;
     transition: all 1s ease;
-}
+  }
 
-.textTitlepresentation {
-  margin-top: 33px;
-  color: white;
-  letter-spacing: 6px;
-  margin-bottom: 16px;
-  display: flex;
-  justify-content: center;
-  font-size: 23px;
-  font-family: 'Oswald';
-  font-weight: 700;
-  align-items: center;
-}
+  .textTitlepresentation {
+    margin-top: 33px;
+    color: white;
+    letter-spacing: 6px;
+    margin-bottom: 24px;
+    margin-top: 114px;
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    font-family: 'Oswald';
+    font-weight: 700;
+    align-items: center;
+  }
 
+
+  
 }
 
 
@@ -320,7 +358,6 @@
     text-align: center;
     flex-wrap: wrap;
     position: relative;
-    width: 85%;
     flex-direction: column;
     align-items: center;
     align-content: center;

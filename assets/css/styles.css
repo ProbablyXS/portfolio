@@ -12,6 +12,7 @@ body {
   font-size: 1.1rem;
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
+  animation: animatedBackground 10s linear infinite alternate;
   display: inline-table;
 }
 
@@ -32,7 +33,6 @@ html {
   align-items: center;
   flex-wrap: wrap;
   z-index: 1000;
-  /* width: fit-content; */
 }
 
 .navbar a {
@@ -199,6 +199,7 @@ html {
 .headerTextBarBottom {
   margin-top: 2%;
   height: 24px;
+  margin-bottom: 30px;
   opacity: 75%;
   max-width: 83%;
 }
@@ -474,6 +475,12 @@ html {
   animation: animatedBackground 10s linear infinite alternate;
 }
 
+.about-animate-bgImagelast {
+  background-image: linear-gradient(#15151570, #000000ad, #151515), url(../../assets/img/about.jpg);
+  background-size: cover;
+  animation: animatedBackground 10s linear infinite alternate;
+}
+
 .aboutContainer {
   margin-top: 100px !important;
   display: flex;
@@ -498,6 +505,7 @@ html {
   padding: 5px;
   background-color: #45a1ff;
   color: #fff;
+  width: 100%;
 }
 
 .footer-animate-bgImage {
@@ -540,7 +548,7 @@ html {
   flex-direction: column;
   align-content: center;
   border-width: 10;
-  border-top-style: double;
+  border-top-style: groove;
   border-color: #fe9900;
   border-bottom-style: solid;
   justify-content: center;
@@ -552,6 +560,29 @@ html {
   position: relative;
 }
 
+.aboutprojetssection {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border-width: 10;
+  border-color: #fe9900;
+  border-bottom-style: solid;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutprojetsmlast {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.marginTop {
+  margin-top: 100px;
+}
+
 .tirerdufutur {
   border-left-style: solid;
   border-right-style: solid;
@@ -559,12 +590,14 @@ html {
   border-right-color: white;
   border-left-width: 10px;
   text-align: center;
+  border-color: #fe9900;
   border-right-width: 10px;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
-  height: 6px;
+  height: 2px;
+  border-width: 8px;
 }
 
 .animate-vecrproject-software-bgImage {
@@ -576,13 +609,19 @@ html {
 
 .textTitleProjets {
   color: white;
+  font: normal 1px Verdana, sans-serif;
   display: flex;
   justify-content: center;
-  font-size: 23px;
+  font-size: 18px;
+}
+
+.textTitleDescription {
+  width: 90%;
 }
 
 .textTitlepresentation {
   margin-top: 100px;
+  margin-bottom: 24px;
   color: white;
   display: flex;
   justify-content: center;
@@ -724,6 +763,7 @@ html {
   border-bottom-right-radius: 100px;
   cursor: pointer;
   display: block;
+  border-radius: 100px;
   filter: brightness(50%);
   width: 40%;
   position: relative;
@@ -754,6 +794,13 @@ html {
   align-items: center;
 }
 
+.primarytltext {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  font-family: "poppins-medium", sans-serif;
+  color: #FFFFFF;
+  font-size: 2.4rem !important;
+}
+
 .presentationTextSoft {
   display: flex;
   text-align: center;
@@ -765,6 +812,111 @@ html {
   justify-content: center;
   justify-items: center;
 }
+
+.blogimgprojetsSoftwarelast {
+  display: flex;
+  transition: 0.3s;
+  animation: cubic-bezier(0, 0.01, 1, 0.99) infinite alternate;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blogimgprojetsSoftwarelast img:hover {
+  filter: brightness(100%);
+  transform: scale(1.00);
+  transition: all 1s ease;
+}
+
+.blogimgprojetsSoftwarelast:hover {
+  filter: grayscale(0%);
+  transform: scale(0.95);
+}
+
+.blogimgprojetsSoftwarelast img {
+  object-fit: cover;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  cursor: pointer;
+  display: block;
+  border-radius: 46px;
+  filter: brightness(50%);
+  width: 89%;
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+.softContainerlast {
+  margin-top: 75px !important;
+  display: flex;
+  width: 80%;
+  margin: 11px;
+  text-align: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  align-content: center;
+}
+
+/* BUTTON */
+
+.intro-content .button {
+  color: #FFFFFF !important;
+  border-color: rgba(255, 255, 255, 0.3);
+  height: 6rem !important;
+  line-height: 5.4rem !important;
+  padding: 0 3.5rem 0 3rem !important;
+  margin-top: .6rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+}
+
+button.stroke,
+.button.stroke {
+  background: transparent !important;
+  border: 3px solid #313131;
+  line-height: 2.8rem;
+  margin-top: 10px;
+}
+
+.button,
+a.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  padding: 0 1rem;
+  color: #ffffff63;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.intro-content .button:hover,
+.intro-content .button:focus {
+  border-color: #fd8000;
+}
+
+
+button.stroke:hover,
+.button.stroke:hover {
+  border: 3px solid #fd8000;
+  color: #fd8000;
+}
+
 
 /* BUTTON DOWNLOAD CURRICULUM VITAE */
 
@@ -832,4 +984,85 @@ html {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(240, 6%, 93%);
+}
+
+
+/* LOADING PAGE */
+
+.HIDDEN {
+  opacity: 0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.SHOWED {
+  transition: all 1s ease-in-out;
+}
+
+.middle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.bar {
+  width: 10px;
+  height: 70px;
+  background: #fff;
+  display: inline-block;
+  transform-origin: bottom center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  /*   box-shadow:5px 10px 20px inset rgba(255,23,25.2); */
+  animation: loader 1.2s linear infinite;
+}
+
+.bar1 {
+  animation-delay: 0.1s;
+}
+
+.bar2 {
+  animation-delay: 0.2s;
+}
+
+.bar3 {
+  animation-delay: 0.3s;
+}
+
+.bar4 {
+  animation-delay: 0.4s;
+}
+
+.bar5 {
+  animation-delay: 0.5s;
+}
+
+.bar6 {
+  animation-delay: 0.6s;
+}
+
+.bar7 {
+  animation-delay: 0.7s;
+}
+
+.bar8 {
+  animation-delay: 0.8s;
+}
+
+@keyframes loader {
+  0% {
+    transform: scaleY(0.1);
+  }
+
+  50% {
+    transform: scaleY(1);
+    background: yellowgreen;
+  }
+
+  100% {
+    transform: scaleY(0.1);
+    background: transparent;
+  }
 }
