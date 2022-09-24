@@ -11,7 +11,6 @@
   }
 
   .menu {
-    width: 65% !important;
     padding-top: 48px;
     padding-bottom: 48px;
   }
@@ -84,7 +83,6 @@
 
   .inner-header-All-Projets {
     width: 100%;
-    padding: 332px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -241,10 +239,6 @@
 
   #screen {
     width: 50%;
-  }
-
-  .menu {
-    width: 85%;
   }
 
   /* PROJETS */

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive for Mobile device -->
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/basicColor.css">
+    <link rel="stylesheet" href="assets/css/dbColor.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/animation.css">
@@ -42,19 +42,21 @@
             <div class="headerAllProjets animate-vecrproject-software-bgImage">
                 <div class="inner-header-All-Projets">
                     <div class="menuprojets">
-                        <p class="headerText primarytltext unselectableLabel"> VECR PROJECT SOFTWARE </p>
+                        <p class="headerText primarytltext unselectableLabel"> VECR PROJECT DATABASE </p>
                         <p class="headerTextBar unselectableLabel"></p>
-                        <p class="headerTextBarBottom unselectableLabel"> Résumé: Un logiciel qui a pour but de tricher
-                            sur
-                            un jeu de
-                            tir à la première
-                            personne.
+                        <p class="headerTextBarBottom unselectableLabel"> Résumé: Ajouts, Utilisations, Modifications de
+                            la base de
+                            données
+                            créer via le
+                            service
+                            MONGODB.
                         </p>
                         <p class="headerTextBarBottom unselectableLabel"> Ce site a été créé spécialement pour cet
                             événement.</p>
 
-                        <a class="button stroke smoothscroll" href="https://vecrproject.com/" target="_blank"
-                            title="">Projet source</a>
+                        <a class="button stroke smoothscroll"
+                            href="https://github.com/ProbablyXS/VECR-PROJECT-DB-PUBLIC" target="_blank" title="">Projet
+                            source</a>
                         <a class="button stroke smoothscroll" href="#about" title="">Voir les infos</a>
                     </div>
                 </div>
@@ -69,53 +71,69 @@
             <section class="aboutmepresentation">
                 <div class="presentationContainer">
 
-                    <div class="blogimgprojets"><img src="assets/img/p01.jpg" alt=""></div>
+                    <div class="blogimgprojets"><img src="assets/img/vecrprojectdb.png" alt=""></div>
 
                     <div class="presentationText">
 
-                        <span class="textTitleProjets unselectableLabel"> Ce logiciel a pour but de tricher sur un jeu à
-                            la
-                            première
-                            personne.</span>
+                        <span class="textTitleProjets unselectableLabel"> Ce logiciel permet de faire des Ajouts,
+                            Utilisations, Modifications de la base de
+                            données
+                            créer via le
+                            service
+                            MongoDB.</span>
 
-                        <span class="textTitleProjets unselectableLabel">Il permet de visualiser des ennemis à travers
-                            les
-                            murs et de faire pas mal de modification à l'écran
-                            que se soit l'interface visuel ou le jeu en lui même afin de rendre l'ergonomie et
-                            l'utilisation
-                            du logiciel le plus complet possible.</span>
+                        <span class="textTitleProjets unselectableLabel">MongoDB est une base de données orientée
+                            documents. En clair, vous bénéficiez de la scalabilité et de la flexibilité que vous voulez,
+                            avec les fonctions d’interrogation et d’indexation qu’il vous faut. </span>
 
-                        <span class="textTitleProjets unselectableLabel">Le logiciel vas dessiner un carrer sur chaque
-                            ennemis détecter à l'écran bien évidemment cette fonction va prendre en concidération
-                            plusieurs
-                            conditions:</span>
+                        <span class="textTitleProjets unselectableLabel">Dans son ensemble le logiciel va utiliser la
+                            bibliothèque de MongoDB pour se connecter à la base de données en envoyant des requêtes
+                            GET/POST.</span>
+
+                        <span class="textTitleProjets unselectableLabel">Lors de la connexion vers le serveur, MongoDB
+                            va récuperer les identifiants de connexion (token).
+                        </span>
+
                         <div class="presentationTextList">
-                            <span class="textTitleProjets unselectableLabel">- Savoir si l'ennemi est vivant ou non
-                            </span>
-                            <span class="textTitleProjets unselectableLabel">- Comparer les camps des joueurs pour
-                                différencier
-                                les couleurs à l'écran afin de connaitre véritablement qui est L'alliés/l'ennemis</span>
-                            <span class="textTitleProjets unselectableLabel">- Connaitre le nombre de joueurs dans la
-                                partie</span>
-                            <span class="textTitleProjets unselectableLabel">- Connaitre qui est vivant ou mort dans la
-                                partie</span>
+                            <span class="textTitleProjets unselectableLabel">- Le logiciel peut éventuellement générer
+                                des
+                                token.</span>
+                            <span class="textTitleProjets unselectableLabel">- Afficher les informations des
+                                utilisateurs
+                                en triant par genre.</span>
+                            <span class="textTitleProjets unselectableLabel">- Générer plusieurs licenses à la
+                                fois.</span>
+                            <span class="textTitleProjets unselectableLabel">- Afficher les informations clients déjà
+                                existante.</span>
+                            <span class="textTitleProjets unselectableLabel">- Modifier les informations clients si
+                                besoin.</span>
+                            <span class="textTitleProjets unselectableLabel">- Déchiffrer/Chiffrer l'intégralité de la
+                                base de données.</span>
+                            <span class="textTitleProjets unselectableLabel">- Supprimer les informations des
+                                utilisateurs.</span>
+                            <span class="textTitleProjets unselectableLabel">- Supprimer completement toute la base de
+                                données.</span>
+                            <span class="textTitleProjets unselectableLabel">- Purger les licenses qui sont expirer
+                                depuis
+                                24H.</span>
                         </div>
 
-                        <span class="textTitleProjets unselectableLabel">Le programme utilise la mémoire du jeu afin de
-                            lire
-                            chaque détails qu'on veut voir à l'écran.</span>
-                        <span class="textTitleProjets unselectableLabel">Grâce à cela nous pouvons donner
-                            des directives au jeu comme l'on souhaite.</span>
+                        <span class="textTitleProjets unselectableLabel">Le programme utilise la méthode de chiffrement
+                            AES pour bénéficier de la meilleure protection possible à l'heure actuelle.</span>
+                        <span class="textTitleProjets unselectableLabel">Bien évidemment les clefs de chiffrement son
+                            caché à l'oeil du client et son renforcé de façon à ce qu'une attaque par force brute ne
+                            puisse pas être utilisé.</span>
                     </div>
                 </div>
 
                 <div class="softContainerlast">
                     <div class="presentationTextSoft2">
                         <div class="tirerdufutur textTitlepresentation unselectableLabel"> Objectif personnel </div>
-                        <span class="textTitleProjets unselectableLabel"> Ce projet ma permi de découvrir comment fonctionner le language machine (assembleur).
-                            Le reverse engineering d'un programme pour modifier ses propriétées.
-                            Création de fonction qui calcule les angles pour positionner et dessiner à l'écran les dessins correctement, la position, la distance  "matrix", "Vecteur", "AxisAlignedBox".
-                            Utilisation de l'API DirectX et la bibliothèque SharpDX pour créer des formes à l'écran.
+                        <span class="textTitleProjets unselectableLabel"> Ce projet ma permi de découvrir comment
+                            fonctionner une base de données dans son intégralité puis de connaitre le service MongoDB et
+                            tout son fonctionnement.
+                            La création d'un logiciel qui permet de gérer la base de données sans utiliser la page de
+                            connexion de la base de données.
                         </span>
                     </div>
                 </div>
@@ -127,13 +145,13 @@
             <div class="headerTextBar unselectableLabel"></div>
             <section class="aboutmelogicielutilise">
                 <div class="softContainer">
-                    <div class="blogimgprojetsSoftware"><img src="assets/img/CE.png" alt=""></div>
+                    <div class="blogimgprojetsSoftware"><img src="assets/img/p02.jpg" alt=""></div>
                     <div class="presentationTextSoft">
-                        <div class="tirerdufutur textTitlepresentation unselectableLabel"> CHEAT ENGINE </div>
-                        <span class="textTitleProjets unselectableLabel"> Cheat Engine peut visualiser la mémoire
-                            désassemblée d'un processus et permettre l'ajout et/ou la modification d'états de jeu pour
-                            donner à l'utilisateur des avantages tels que de la santé, du temps ou des munitions
-                            infinies.</span>
+                        <div class="tirerdufutur textTitlepresentation unselectableLabel"> MONGODB </div>
+                        <span class="textTitleProjets unselectableLabel"> MongoDB (de l'anglais humongous qui peut être
+                            traduit par « énorme ») est un système de gestion de base de données orienté documents,
+                            répartissable sur un nombre quelconque d'ordinateurs et ne nécessitant pas de schéma
+                            prédéfini des données.</span>
                     </div>
                 </div>
                 <div class="softContainer2">
@@ -157,37 +175,6 @@
             <div class="tirerdufutur marginTop textTitlesoft  unselectableLabel"> LES LANGUES UTILISES </div>
             <div class="headerTextBar unselectableLabel"></div>
             <section class="aboutmelogicielutilise">
-                <div class="softContainerlast">
-                    <div class="blogimgprojetsSoftwarelast"><img src="assets/img/assembly.jpg" alt=""></div>
-                    <div class="presentationTextSoft2">
-                        <div class="tirerdufutur textTitlepresentation unselectableLabel"> ASSEMBLEUR </div>
-                        <span class="textTitleProjets unselectableLabel"> le langage de plus bas niveau qui représente
-                            le
-                            langage machine sous une forme lisible par un humain. Les combinaisons de bits du langage
-                            machine sont représentées par des symboles dits « mnémoniques », c'est-à-dire faciles à
-                            retenir.
-                            Le programme assembleur convertit ces mnémoniques en langage machine, ainsi que les valeurs
-                            (écrites en décimal) en binaire et les libellés d'emplacements en adresses, en vue de créer
-                            par
-                            exemple un fichier objet ou un fichier exécutable.</span>
-                    </div>
-                </div>
-                <div class="softContainer2">
-                    <div class="blogimgprojetsSoftware"><img src="assets/img/vb.net.png" alt=""></div>
-                    <div class="softContainerlast">
-                        <div class="presentationTextSoft2">
-                            <div class="tirerdufutur textTitlepresentation unselectableLabel"> VB.NET </div>
-                            <span class="textTitleProjets textTitleDescription unselectableLabel"> VB.NET permet de
-                                développer
-                                en .NET via Visual Studio, sur les systèmes d'exploitation Windows (98, 2000, XP, Vista,
-                                7,
-                                8,
-                                8.1 et 10). Comme tout autre langage de la plateforme .NET, VB.NET est compilé vers le
-                                langage
-                                intermédiaire CIL.</span>
-                        </div>
-                    </div>
-                </div>
                 <div class="softContainerlast">
                     <div class="blogimgprojetsSoftwarelast"><img src="assets/img/c.png" alt=""></div>
                     <div class="presentationTextSoft2">

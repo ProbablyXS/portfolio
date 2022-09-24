@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive for Mobile device -->
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/basicColor.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/animation.css">
@@ -12,276 +13,286 @@
 
 <body>
 
-    <!-- NAVIGATION BAR -->
-    <div class="navbar" id="navbar">
-        <a class="navbarLeftTitle unselectableLabel">PORTFOLIO</a>
-        <i id="hamburger" class="fa-solid fa-bars"></i>
-        <div id="navbarRightLink" class="navbarRightLink">
-            <a class="active" id="menu1" href="#menu">Menu</a>
-            <a id="menu2" href="#presentation">Présentation</a>
-            <a id="menu3" href="#projets">Projets</a>
-            <a id="menu4" href="#about">À propos</a>
-        </div>
-    </div>
+    <section class="HIDDEN">
 
-    <!-- HEADER -->
-    <div id="menu">
-        <div class="header animate-bgImage">
-            <div class="inner-header">
-                <div class="menu">
-                    <p class="headerText unselectableLabel"> Bienvenue sur ma page portfolio </p>
-                    <p class="headerTextBar unselectableLabel"></p>
-                    <p class="headerTextBarBottom unselectableLabel"> Ce site vous permet de connaitre mes différents
-                        projets
-                        que j'ai pu aborder durant mes années en tant qu'autodidacte.
-                    </p>
-                    <p class="headerTextBarBottom unselectableLabel"> Ce site a été créé spécialement pour cet
-                        événement.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- PRESENTATION -->
-    <div id="presentation"></div>
-    <div class="presentation presentation-animate-bgImage">
-
-        <svg class="waves2" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-            <defs>
-                <path id="gentle-wave6"
-                    d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v -80 h -352 z" />
-            </defs>
-            <g class="parallax">
-                <use xlink:href="#gentle-wave6" x="90" y="1" fill="rgba(17, 20, 30, 0.56)" />
-                <use xlink:href="#gentle-wave6" x="90" y="1" fill="rgb(18 23 17)" />
-            </g>
-        </svg>
-
-        <div class="textTitle unselectableLabel"> PRESENTATION </div>
-        <div class="headerTextBar unselectableLabel"></div>
-        <div id="screen" class="hide">
-            <div id="bar">Administrateur: Présentation</div>
-            <p class="font">C:\Utilisateurs\Administrateur>say "Bonjour je m'appelle Corantin.</p>
-            <p class="font">Fasciner par la programmation en général, je me forme en tant qu'autodidacte pendant mes
-                heures
-                perdu
-                pour connaitre et améliorer mes connaissances.</p>
-            <p class="font">Je suis une personne très motivée et investie dans le travail que j'entreprends tout en
-                gardant
-                la persévérance pour aboutir à chacun de mes projets.</p>
-            <p class="font">Mes projets sont tous différents les uns que les autres de manière à avoir le maximum de
-                polyvalence possible en la matière".</p>
-
-            <div id="buttonCV" class="buttonCV">
-                <a class="buttonCV"><img id="buttonImgCV" /></a>
-                <div class="textCV unselectableLabel"><span id="CV"> Ouvrir le CV </span></div>
+        <!-- NAVIGATION BAR -->
+        <div class="navbar" id="navbar">
+            <a class="navbarLeftTitle unselectableLabel">PORTFOLIO</a>
+            <i id="hamburger" class="fa-solid fa-bars"></i>
+            <div id="navbarRightLink" class="navbarRightLink">
+                <a class="active" id="menu1" href="#menu">Menu</a>
+                <a id="menu2" href="#presentation">Présentation</a>
+                <a id="menu3" href="#projets">Projets</a>
+                <a id="menu4" href="#about">À propos</a>
             </div>
         </div>
 
-        <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-            <defs>
-                <path id="gentle-wavetop"
-                    d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 41 h -352 z" />
-                <path id="gentle-wavebot"
-                    d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v -69 h -352 z" />
-
-            </defs>
-            <g class="parallax">
-                <use xlink:href="#gentle-wavetop" x="90" y="1" fill="rgb(17 20 30 / 56%)" />
-                <use xlink:href="#gentle-wavetop" x="90" y="1" fill="rgb(4 24 41)" />
-            </g>
-        </svg>
-
-    </div>
-
-    <!-- PROJETS -->
-    <div id="projets"></div>
-    <div class="projets projets-animate-bgImage">
-        <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-            <defs>
-                <path id="gentle-wavetop"
-                    d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 41 h -352 z" />
-                <path id="gentle-wavebot"
-                    d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v -69 h -352 z" />
-
-            </defs>
-            <g class="parallax">
-                <use xlink:href="#gentle-wavebot" x="90" y="1" fill="rgb(13 18 17)" />
-                <use xlink:href="#gentle-wavebot" x="90" y="1" fill="rgb(13 18 17)" />
-            </g>
-        </svg>
-
-        <div class="textTitle unselectableLabel"> MES PROJETS PERSONNELS </div>
-        <div class="headerTextBar unselectableLabel"></div>
-        <section>
-            <div class="containerBlogs">
-                <div class="blog"  id="buttonRedirection">
-                    <div class="blogimg"><img src="assets/img/p01.jpg" alt=""></div>
-                    <div class="blogtext">
-                        <span class="textTitle unselectableLabel"> VECR PROJECT SOFTWARE </span></a>
-                        <p class="textTitle unselectableLabel blogtextTiny"> C#/VB.NET </p>
-                        <p class="font unselectableLabel">Résumé: Un logiciel qui a pour but de tricher sur un jeu de
-                            tir à la première
-                            personne.
+        <!-- HEADER -->
+        <div id="menu">
+            <div class="header animate-bgImage">
+                <div class="inner-header">
+                    <div class="menu">
+                        <p class="headerText unselectableLabel"> Bienvenue sur ma page portfolio </p>
+                        <p class="headerTextBar unselectableLabel"></p>
+                        <p class="headerTextBarBottom unselectableLabel"> Ce site vous permet de connaitre mes
+                            différents
+                            projets
+                            que j'ai pu aborder durant mes années en tant qu'autodidacte.
                         </p>
-                    </div>
-                </div>
-                <div class="blog">
-                    <div class="blogimg"><img src="assets/img/p02.jpg" alt=""></div>
-                    <div class="blogtext">
-                        <span class="textTitle unselectableLabel"> VECR PROJECT DATABASE </span>
-                        <p class="textTitle unselectableLabel blogtextTiny"> C# </p>
-                        <p class="font unselectableLabel">Résumé: Ajouts, Utilisations, Modifications de la base de
-                            données
-                            créer via le
-                            service
-                            MONGODB.</p>
-                    </div>
-                </div>
-                <div class="blog">
-                    <div class="blogimg"><img src="assets/img/p03.png" alt=""></div>
-                    <div class="blogtext">
-                        <span class="textTitle unselectableLabel"> VECR PROJECT API REST </span>
-                        <p class="textTitle unselectableLabel blogtextTiny"> JS </p>
-                        <p class="font unselectableLabel">Résumé: Appel de plusieurs fonctions différentes pour recevoir
-                            des informations via les commandes GET/POST</p>
-                    </div>
-                </div>
-                <div class="blog">
-                    <div class="blogimg"><img src="assets/img/p04.png" alt=""></div>
-                    <div class="blogtext">
-                        <span class="textTitle unselectableLabel"> VECR PROJECT WEBSITE </span>
-                        <p class="textTitle unselectableLabel blogtextTiny"> HTML/CSS/PHP </p>
-                        <p class="font unselectableLabel">Résumé: Création du site VECR PROJET intégralement déployé
-                            sur OVH.</p>
-                    </div>
-                </div>
-                <div class="blog">
-                    <div class="blogimg"><img src="assets/img/p05.png" alt=""></div>
-                    <div class="blogtext">
-                        <span class="textTitle unselectableLabel"> VECR PROJECT PLUTONIUM SPOOFER </span>
-                        <p class="textTitle unselectableLabel blogtextTiny"> C# </p>
-                        <p class="font unselectableLabel">Résumé: Cachez votre ordinateur des serveurs du jeu en
-                            ligne grâce au
-                            spoofer.</p>
-                    </div>
-                </div>
-                <div class="blog">
-                    <div class="blogimg"><img src="assets/img/p06.png" alt=""></div>
-                    <div class="blogtext">
-                        <span class="textTitle unselectableLabel"> VECR PROJECT HWID RESET </span>
-                        <p class="textTitle unselectableLabel blogtextTiny"> REACT/JS </p>
-                        <p class="font unselectableLabel">Résumé: Site internet dédié au changement de votre HWID tout
-                            en gardant vos
-                            données personnelles sécurisées.</p>
-                    </div>
-                </div>
-                <div class="blog">
-                    <div class="blogimg"><img src="assets/img/p07.png" alt=""></div>
-                    <div class="blogtext">
-                        <span class="textTitle unselectableLabel"> BOT DISCORD </span>
-                        <p class="textTitle unselectableLabel blogtextTiny"> NODE/JS </p>
-                        <p class="font unselectableLabel">Résumé: Un bot discord crée pour le maintien du serveur et
-                            mis à jour des
-                            informations API.</p>
-                    </div>
-                </div>
-                <div class="blog">
-                    <div class="blogimg"><img src="assets/img/p08.png" alt=""></div>
-                    <div class="blogtext">
-                        <span class="textTitle unselectableLabel"> FARMING BOT POKEMMO </span>
-                        <p class="textTitle unselectableLabel blogtextTiny"> VB.NET </p>
-                        <p class="font unselectableLabel">Résumé: Un simple pixel bot pour le jeu Pokémmo.</p>
+                        <p class="headerTextBarBottom unselectableLabel"> Ce site a été créé spécialement pour cet
+                            événement.</p>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
 
-    <!-- A PROPOS -->
-    <div id="about"></div>
-    <div class="about about-animate-bgImage">
-        <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-            <defs>
-                <path id="gentle-wavetop"
-                    d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 41 h -352 z" />
-                <path id="gentle-wavebot"
-                    d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v -69 h -352 z" />
+        <!-- PRESENTATION -->
+        <div id="presentation"></div>
+        <div class="presentation presentation-animate-bgImage">
 
-            </defs>
-            <g class="parallax">
-                <use xlink:href="#gentle-wavebot" x="90" y="1" fill="rgb(17 20 30 / 56%)" />
-                <use xlink:href="#gentle-wavebot" x="90" y="1" fill="rgb(20 23 27)" />
-            </g>
-        </svg>
+            <svg class="waves2" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave6"
+                        d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v -80 h -352 z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave6" x="90" y="1" fill="rgba(17, 20, 30, 0.56)" />
+                    <use xlink:href="#gentle-wave6" x="90" y="1" fill="rgb(18 23 17)" />
+                </g>
+            </svg>
 
-        <div class="textTitle unselectableLabel"> A PROPOS </div>
-        <div class="headerTextBar unselectableLabel"></div>
-        <section class="aboutme">
-            <div class="aboutContainer">
-                <span class="textTitle unselectableLabel"> Mes infos personnelles </span>
+            <div class="textTitle unselectableLabel"> PRESENTATION </div>
+            <div class="headerTextBar unselectableLabel"></div>
+            <div id="screen" class="hide">
+                <div id="bar">Administrateur: Présentation</div>
+                <p class="font">C:\Utilisateurs\Administrateur>say "Bonjour je m'appelle Corantin.</p>
+                <p class="font">Fasciner par la programmation en général, je me forme en tant qu'autodidacte pendant mes
+                    heures
+                    perdu
+                    pour connaitre et améliorer mes connaissances.</p>
+                <p class="font">Je suis une personne très motivée et investie dans le travail que j'entreprends tout en
+                    gardant
+                    la persévérance pour aboutir à chacun de mes projets.</p>
+                <p class="font">Mes projets sont tous différents les uns que les autres de manière à avoir le maximum de
+                    polyvalence possible en la matière".</p>
+
+                <div id="buttonCV" class="buttonCV">
+                    <a class="buttonCV"><img id="buttonImgCV" /></a>
+                    <div class="textCV unselectableLabel"><span id="CV"> Ouvrir le CV </span></div>
+                </div>
             </div>
-            <div class="myINFORMATION">
-                <div class="aboutInfo">
-                    <i class="unselectableLabel fa-sharp fa-solid fa-location-dot"></i>
-                    <p class="textTitle unselectableLabel aboutTextInfo"> Localisation: </p>
-                    <p class="textTitle unselectableLabel aboutTextInfo"> FRANCE </p>
+
+            <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wavetop"
+                        d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 41 h -352 z" />
+                    <path id="gentle-wavebot"
+                        d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v -69 h -352 z" />
+
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wavetop" x="90" y="1" fill="rgb(17 20 30 / 56%)" />
+                    <use xlink:href="#gentle-wavetop" x="90" y="1" fill="rgb(4 24 41)" />
+                </g>
+            </svg>
+
+        </div>
+
+        <!-- PROJETS -->
+        <div id="projets"></div>
+        <div class="projets projets-animate-bgImage">
+            <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wavetop"
+                        d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 41 h -352 z" />
+                    <path id="gentle-wavebot"
+                        d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v -69 h -352 z" />
+
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wavebot" x="90" y="1" fill="rgb(13 18 17)" />
+                    <use xlink:href="#gentle-wavebot" x="90" y="1" fill="rgb(13 18 17)" />
+                </g>
+            </svg>
+
+            <div class="textTitle unselectableLabel"> MES PROJETS PERSONNELS </div>
+            <div class="headerTextBar unselectableLabel"></div>
+            <section>
+                <div class="containerBlogs">
+                    <div class="blog" id="buttonRedirection1">
+                        <div class="blogimg"><img src="assets/img/p01.jpg" alt=""></div>
+                        <div class="blogtext">
+                            <span class="textTitle unselectableLabel"> VECR PROJECT SOFTWARE </span></a>
+                            <p class="textTitle unselectableLabel blogtextTiny"> C#/VB.NET </p>
+                            <p class="font unselectableLabel">Résumé: Un logiciel qui a pour but de tricher sur un jeu
+                                de
+                                tir à la première
+                                personne.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog" id="buttonRedirection2">
+                        <div class="blogimg"><img src="assets/img/p02.jpg" alt=""></div>
+                        <div class="blogtext">
+                            <span class="textTitle unselectableLabel"> VECR PROJECT DATABASE </span>
+                            <p class="textTitle unselectableLabel blogtextTiny"> C# </p>
+                            <p class="font unselectableLabel">Résumé: Ajouts, Utilisations, Modifications de la base de
+                                données
+                                créer via le
+                                service
+                                MONGODB.</p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blogimg"><img src="assets/img/p03.png" alt=""></div>
+                        <div class="blogtext">
+                            <span class="textTitle unselectableLabel"> VECR PROJECT API REST </span>
+                            <p class="textTitle unselectableLabel blogtextTiny"> JS </p>
+                            <p class="font unselectableLabel">Résumé: Appel de plusieurs fonctions différentes pour
+                                recevoir
+                                des informations via les commandes GET/POST</p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blogimg"><img src="assets/img/p04.png" alt=""></div>
+                        <div class="blogtext">
+                            <span class="textTitle unselectableLabel"> VECR PROJECT WEBSITE </span>
+                            <p class="textTitle unselectableLabel blogtextTiny"> HTML/CSS/PHP </p>
+                            <p class="font unselectableLabel">Résumé: Création du site VECR PROJET intégralement déployé
+                                sur OVH.</p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blogimg"><img src="assets/img/p05.png" alt=""></div>
+                        <div class="blogtext">
+                            <span class="textTitle unselectableLabel"> VECR PROJECT PLUTONIUM SPOOFER </span>
+                            <p class="textTitle unselectableLabel blogtextTiny"> C# </p>
+                            <p class="font unselectableLabel">Résumé: Cachez votre ordinateur des serveurs du jeu en
+                                ligne grâce au
+                                spoofer.</p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blogimg"><img src="assets/img/p06.png" alt=""></div>
+                        <div class="blogtext">
+                            <span class="textTitle unselectableLabel"> VECR PROJECT HWID RESET </span>
+                            <p class="textTitle unselectableLabel blogtextTiny"> REACT/JS </p>
+                            <p class="font unselectableLabel">Résumé: Site internet dédié au changement de votre HWID
+                                tout
+                                en gardant vos
+                                données personnelles sécurisées.</p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blogimg"><img src="assets/img/p07.png" alt=""></div>
+                        <div class="blogtext">
+                            <span class="textTitle unselectableLabel"> BOT DISCORD </span>
+                            <p class="textTitle unselectableLabel blogtextTiny"> NODE/JS </p>
+                            <p class="font unselectableLabel">Résumé: Un bot discord crée pour le maintien du serveur et
+                                mis à jour des
+                                informations API.</p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blogimg"><img src="assets/img/p08.png" alt=""></div>
+                        <div class="blogtext">
+                            <span class="textTitle unselectableLabel"> FARMING BOT POKEMMO </span>
+                            <p class="textTitle unselectableLabel blogtextTiny"> VB.NET </p>
+                            <p class="font unselectableLabel">Résumé: Un simple pixel bot pour le jeu Pokémmo.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="aboutInfo">
-                    <i class="unselectableLabel fa-solid fa-envelope"></i>
-                    <p class="textTitle unselectableLabel aboutTextInfo"> Email: </p>
-                    <p class="textTitle unselectableLabel aboutTextInfo"> corantin.berger@hotmail.com </p>
-                </div>
-                <div class="aboutInfo">
-                    <i class="unselectableLabel fa-solid fa-phone"></i>
-                    <p class="textTitle unselectableLabel aboutTextInfo"> Téléphone mobile: </p>
-                    <p class="textTitle unselectableLabel aboutTextInfo"> 07.85.21.95.02 </p>
-                </div>
-                <div class="aboutInfo">
-                    <i class="unselectableLabel fa-solid fa-globe"></i>
-                    <p class="textTitle unselectableLabel aboutTextInfo"> Nationalité: </p>
-                    <p class="textTitle unselectableLabel aboutTextInfo"> Français </p>
+            </section>
+        </div>
+
+        <!-- A PROPOS -->
+        <div id="about"></div>
+        <div class="about about-animate-bgImage">
+            <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wavetop"
+                        d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 41 h -352 z" />
+                    <path id="gentle-wavebot"
+                        d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v -69 h -352 z" />
+
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wavebot" x="90" y="1" fill="rgb(17 20 30 / 56%)" />
+                    <use xlink:href="#gentle-wavebot" x="90" y="1" fill="rgb(20 23 27)" />
+                </g>
+            </svg>
+
+            <div class="textTitle unselectableLabel"> A PROPOS </div>
+            <div class="headerTextBar unselectableLabel"></div>
+            <section class="aboutme">
+                <div class="aboutContainer">
+                    <span class="textTitle unselectableLabel"> Mes infos personnelles </span>
                 </div>
                 <div class="myINFORMATION">
-                    <div class="aboutButton">
-                        <p class="textTitle unselectableLabel aboutTextInfo"> GITHUB </p>
-                        <a href="https://github.com/ProbablyXS" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-
-                        <p class="unselectableLabel fa-sharp fa-solid fa-caret-up"></p>
-
-                        <p class="textTitle unselectableLabel aboutTextInfo"> TWITTER </p>
-                        <a href="#" target="_blank">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-
-                        <p class="unselectableLabel fa-sharp fa-solid fa-caret-up"></p>
-
-                        <p class="textTitle unselectableLabel aboutTextInfo"> INSTAGRAM </p>
-                        <a href="https://www.instagram.com/mainegato" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-
-                        <p class="unselectableLabel fa-sharp fa-solid fa-caret-up"></p>
-
-                        <p class="textTitle unselectableLabel aboutTextInfo"> YOUTUBE </p>
-                        <a href="https://www.youtube.com/ProbablyVECR" target="_blank">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
+                    <div class="aboutInfo">
+                        <i class="unselectableLabel fa-sharp fa-solid fa-location-dot"></i>
+                        <p class="textTitle unselectableLabel aboutTextInfo"> Localisation: </p>
+                        <p class="textTitle unselectableLabel aboutTextInfo"> FRANCE </p>
                     </div>
-                </div>
-        </section>
-    </div>
+                    <div class="aboutInfo">
+                        <i class="unselectableLabel fa-solid fa-envelope"></i>
+                        <p class="textTitle unselectableLabel aboutTextInfo"> Email: </p>
+                        <p class="textTitle unselectableLabel aboutTextInfo"> corantin.berger@hotmail.com </p>
+                    </div>
+                    <div class="aboutInfo">
+                        <i class="unselectableLabel fa-solid fa-phone"></i>
+                        <p class="textTitle unselectableLabel aboutTextInfo"> Téléphone mobile: </p>
+                        <p class="textTitle unselectableLabel aboutTextInfo"> 07.85.21.95.02 </p>
+                    </div>
+                    <div class="aboutInfo">
+                        <i class="unselectableLabel fa-solid fa-globe"></i>
+                        <p class="textTitle unselectableLabel aboutTextInfo"> Nationalité: </p>
+                        <p class="textTitle unselectableLabel aboutTextInfo"> Français </p>
+                    </div>
+                    <div class="myINFORMATION">
+                        <div class="aboutButton">
+                            <p class="textTitle unselectableLabel aboutTextInfo"> GITHUB </p>
+                            <a href="https://github.com/ProbablyXS" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
 
-    <!-- FOOTER -->
-    <div class="footer footer-animate-bgImage">
+                            <p class="unselectableLabel fa-sharp fa-solid fa-caret-up"></p>
 
-        <footer>
-            <p>© <span id="year"></span>, CORANTIN BERGER</p>
-        </footer>
+                            <p class="textTitle unselectableLabel aboutTextInfo"> TWITTER </p>
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
 
-    </div>
+                            <p class="unselectableLabel fa-sharp fa-solid fa-caret-up"></p>
+
+                            <p class="textTitle unselectableLabel aboutTextInfo"> INSTAGRAM </p>
+                            <a href="https://www.instagram.com/mainegato" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <p class="unselectableLabel fa-sharp fa-solid fa-caret-up"></p>
+
+                            <p class="textTitle unselectableLabel aboutTextInfo"> YOUTUBE </p>
+                            <a href="https://www.youtube.com/ProbablyVECR" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+            </section>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer footer-animate-bgImage">
+
+            <footer>
+                <p>© <span id="year"></span>, CORANTIN BERGER</p>
+            </footer>
+
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
 
     <script src="assets/js/responsive.js"></script>
     <script src="assets/js/index.js"></script>

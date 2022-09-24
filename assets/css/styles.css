@@ -192,6 +192,7 @@ html {
 .headerTextBar {
   border-bottom-style: solid;
   width: 297px;
+  max-width: 90%;
   padding-top: 18px;
   border-color: white;
 }
@@ -549,7 +550,7 @@ html {
   align-content: center;
   border-width: 10;
   border-top-style: groove;
-  border-color: #fe9900;
+  border-color: var(--colorPrimary01);
   border-bottom-style: solid;
   justify-content: center;
   align-items: center;
@@ -565,7 +566,7 @@ html {
   flex-direction: column;
   align-content: center;
   border-width: 10;
-  border-color: #fe9900;
+  border-color: var(--colorPrimary01);
   border-bottom-style: solid;
   justify-content: center;
   align-items: center;
@@ -590,7 +591,7 @@ html {
   border-right-color: white;
   border-left-width: 10px;
   text-align: center;
-  border-color: #fe9900;
+  border-color: var(--colorPrimary01);
   border-right-width: 10px;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
@@ -651,7 +652,7 @@ html {
 
 .borderallprojects {
   border-width: 10;
-  border-color: #fe9900;
+  border-color: var(--colorPrimary01);
   margin-top: 210px;
   border-bottom-style: solid;
 }
@@ -815,6 +816,7 @@ html {
 
 .presentationTextSoft2 {
   display: flex;
+  width: 80%;
   text-align: center;
   flex-wrap: wrap;
   position: relative;
@@ -862,9 +864,7 @@ html {
 }
 
 .softContainerlast {
-  margin-top: 75px !important;
   display: flex;
-  width: 80%;
   margin: 11px;
   text-align: center;
   flex-wrap: nowrap;
@@ -872,6 +872,11 @@ html {
   justify-content: space-around;
   flex-direction: column;
   align-content: center;
+}
+
+.softContainer2 {
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 /* BUTTON */
@@ -919,14 +924,14 @@ input[type="button"] {
 
 .intro-content .button:hover,
 .intro-content .button:focus {
-  border-color: #fd8000;
+  border-color: var(--colorBorderButtonPrimary01);
 }
 
 
 button.stroke:hover,
 .button.stroke:hover {
-  border: 3px solid #fd8000;
-  color: #fd8000;
+  border: 3px solid var(--colorPrimary01);
+  color: var(--colorPrimary01);
 }
 
 

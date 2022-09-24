@@ -1,3 +1,14 @@
+//loading page
+
+$(document).ready(function () {
+
+    setTimeout(function () {
+        $('section').removeClass('HIDDEN');
+        $('section').addClass('SHOWED');
+    }, 2000);
+
+});
+
 //FOOTER
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
@@ -137,19 +148,74 @@ CV.addEventListener("click", async event => {
 
 
 
-const buttonRedirection = document.getElementById("buttonRedirection");
+const buttonRedirection1 = document.getElementById("buttonRedirection1");
+const buttonRedirection2 = document.getElementById("buttonRedirection2");
+const buttonRedirection3 = document.getElementById("buttonRedirection3");
+const buttonRedirection4 = document.getElementById("buttonRedirection4");
+const buttonRedirection5 = document.getElementById("buttonRedirection5");
+const buttonRedirection6 = document.getElementById("buttonRedirection6");
+const buttonRedirection7 = document.getElementById("buttonRedirection7");
+const buttonRedirection8 = document.getElementById("buttonRedirection8");
 
-// buttonRedirection click
-buttonRedirection.addEventListener("click", async event => {
+// buttonRedirection1 click
+buttonRedirection1.addEventListener("click", async event => {
+    await openpage("1");
+})
+buttonRedirection2.addEventListener("click", async event => {
+    await openpage("2");
+})
+buttonRedirection3.addEventListener("click", async event => {
+    await openpage("3");
+})
+buttonRedirection4.addEventListener("click", async event => {
+    await openpage("4");
+})
+buttonRedirection5.addEventListener("click", async event => {
+    await openpage("5");
+})
+buttonRedirection6.addEventListener("click", async event => {
+    await openpage("6");
+})
+buttonRedirection7.addEventListener("click", async event => {
+    await openpage("7");
+})
+buttonRedirection8.addEventListener("click", async event => {
+    await openpage("8");
+})
 
-    console.log("redictection");
+async function openpage(id) {
+
+console.log(id);
 
     await sleep(200);
 
-    document.body.style.opacity = '0%'
+    document.body.style.opacity = '0%';
 
     await sleep(2000);
 
-    document.location.href="vecr-software.html"
+    if (id === "1") {
+        document.location.href = "vecr-software.html";
+    }
+    if (id === "2") {
+        document.location.href = "vecr-software-DB.html";
+    }
+    if (id === "3") {
+        document.location.href = "vecr-software.html";
+    }
+    if (id === "4") {
+        document.location.href = "vecr-software.html";
+    }
+    if (id === "5") {
+        document.location.href = "vecr-software.html";
+    }
+    if (id === "6") {
+        document.location.href = "vecr-software.html";
+    }
+    if (id === "7") {
+        document.location.href = "vecr-software.html";
+    }
+    if (id === "8") {
+        document.location.href = "vecr-software.html";
+    }
 
-})
+}
